@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Design Case Study - Teena Monaco Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://teemonaco.github.io/teena-ux-portfolio/images/fav-ico.svg">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        h1, h2, h3, .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero and Header */
+        header {
+            background: #F4F7F4;
+        }
+        .navbar {
+            background-color: #F4F7F4;
+        }
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        /* Heading size adjustments */
+        h1 {
+            font-size: 40px!important;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 26px!important;
+            margin-bottom: 15px;
+        }
+
+        /* Case Study Sections */
+        .container h2 {
+            color: #8E9D78;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            margin-bottom: 20px;
+        }
+
+        /* Card for Design Solutions */
+        .design-solution, .card {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            transition: box-shadow 0.2s;
+        }
+        .design-solution:hover, .card:hover {
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Accordion Customization */
+        .accordion-button {
+            background-color: #F9F9F9;
+            color: #333;
+            font-weight: 600;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: #8E9D78;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .accordion-item {
+            border: none;
+            margin-bottom: 10px;
+        }
+        .accordion-body {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-top: none;
+            padding: 15px;
+        }
+
+        /* Carousel */
+        .carousel-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .carousel-caption h5 {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mx-4">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logo-2.svg" alt="Teena Monaco Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container my-5">
+        <h1 class="text-center">Mobile App Design Case Study</h1>
+        <p class="text-center lead">A detailed look into the design of a healthcare-focused mobile app to enhance data accessibility and user engagement.</p>
+    </section>
+
+    <!-- Overview -->
+    <section class="container mb-5">
+        <h2>Project Overview</h2>
+        <p>This mobile app was developed to provide healthcare professionals with a powerful, user-friendly platform to access the latest research, clinical trials, and personalized insights. The design focused on delivering a clean, intuitive user experience optimized for mobile devices.</p>
+        <img src="../images/infopro-banner.png" alt="85% Wasted Research Efforts" class="img-fluid p-5" title="85% of research efforts are wasted">                
+
+    </section>
+
+    <!-- <section class="container mb-5">
+        <h2>Research & Problem Identification</h2>
+        <p>Through user interviews and competitor analysis, we identified a need for easily accessible, up-to-date information tailored to healthcare trends. Users expressed frustration with fragmented information and lack of customization in existing solutions.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/wasted_research.png" alt="85% Wasted Research Efforts" class="img-fluid p-5" title="85% of research efforts are wasted">                
+                </div>
+            </div>
+          
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/untrustworthy_trials.png" alt="25% Untrustworthy Clinical Trials" class="img-fluid p-5" title="25% of clinical trials contain unreliable data">            
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Research & Problem Identification -->
+    <!-- <section class="container mb-5">
+        <h2>Research & Problem Identification</h2>
+        <p>User interviews and usability testing identified key pain points, such as difficulty in locating relevant information and limited customization options in existing solutions.</p>
+        <div class="accordion" id="researchAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        User Interviews
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#researchAccordion">
+                    <div class="accordion-body">
+                        Through user interviews, we learned that users needed streamlined access to topic-specific content and enhanced filtering capabilities.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Usability Testing
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#researchAccordion">
+                    <div class="accordion-body">
+                        Testing revealed that users preferred quick access to saved searches and personalized notifications, which led to the development of custom notification settings and a personalized dashboard.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="container mb-5">
+        <h2>Competitor Analysis</h2>
+        <p>Analysis revealed that existing platforms often lack user-friendly customization features, leading us to prioritize advanced filtering and personalized curation. </p>
+        <p>DynaMed and UpToDate are trusted tools for clinicians but lack the customization, trend-focused content, and advanced filtering that researchers need for a comprehensive, mobile-first experience.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/dyna.jpg" alt="DynaMedex Comparison" class="img-fluid" title="DynaMedex Comparison">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                <img src="../images/upto.jpg" alt="Up to Date Comparison" class="img-fluid" title="Up to Date Comparison">
+            </div>
+        </div>
+    </section>
+
+     <!-- <section class="container mb-5">
+        <h2>Ideation & Brainstorming</h2>
+        <p>In the initial stages of developing InfoPro, we conducted extensive ideation and brainstorming sessions to explore possible features, and address usability challenges. </p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+
+                <img src="../images/mobile-thumbnail.png" alt="Sticky Note Ideation for InfoX" class="img-fluid" title="Sticky Note Ideation">
+            
+            </div>
+        </div>
+
+            <div class="col-md-6">
+                <div class="card">
+
+                <img src="../images/early_wireframes.png" alt="Early Wireframes for InfoX" class="img-fluid" title="Early Wireframes and Concepts">
+            </div>
+    
+
+        </div>
+    </section> -->
+
+
+    <!-- Design Solutions -->
+    <section class="container mb-5">
+        <h2 class="text-center">Design Solutions</h2>
+        <p class="text-center">Our approach for the new mobile app, InfoPro, we prioritized user accessibility, personalized content delivery, and intuitive navigation, enabling healthcare professionals to access critical insights quickly and effectively.</p>
+    
+        <!-- First Row -->
+        <div class="row mb-4">
+            <div class="col-md-4  d-flex flex-column align-items-center">
+                <img src="../images/discover.png" class="img-fluid" alt="Content Categorization & Filtering">
+                <h5 class="text-center mt-3">Content Categorization & Filtering</h5>
+                <p class="text-center">Introduced advanced filtering options, enabling users to filter content by categories like clinical trials, publications, and patents. This enhanced content discoverability and allowed users to tailor their feed to specific areas of interest.</p>
+            </div>
+            <div class="col-md-4  d-flex flex-column align-items-center">
+                <img src="../images/account-settings.png" class="img-fluid" alt="Customizable Notification Settings">
+                <h5 class="text-center mt-3">Customizable Notification Settings</h5>
+                <p class="text-center">Implemented a notification center where users can set preferences for topics and content types. Users can prioritize notifications by urgency, ensuring they receive only the most relevant updates.</p>
+            </div>
+            <div class="col-md-4  d-flex flex-column align-items-center">
+                <img src="../images/infopro-fav.png" class="img-fluid" alt="Personalized Dashboard">
+                <h5 class="text-center mt-3">Personalized Dashboard</h5>
+                <p class="text-center">Designed a user-centered dashboard with quick access to saved searches, favorite topics, and the latest updates tailored to user interests, increasing engagement and ease of use.</p>
+            </div>
+        </div>
+    
+        <!-- Second Row -->
+        <div class="row text-center">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <img src="../images/infopro-cat.png" class="img-fluid" alt="Detailed Search Filters">
+                <h5 class="text-center mt-3">Detailed Search Filters</h5>
+                <p class="text-center">Enhanced the search functionality with detailed filters, allowing users to narrow down results by content type, organization, country, and other critical criteria, making research faster and more targeted.</p>
+            </div>
+            <div class="col-md-4  d-flex flex-column align-items-center">
+                <img src="../images/account-settings.png" class="img-fluid" alt="Account Settings & Notifications">
+                <h5 class="text-center mt-3">Account Settings & Notifications</h5>
+                <p class="text-center">Developed intuitive account settings with notification control, giving users full autonomy over what information they receive and when, enhancing the overall user experience.</p>
+            </div>
+            <div class="col-md-4  d-flex flex-column align-items-center">
+                <img src="../images/date-filter.png" class="img-fluid" alt="Advanced Date Filtering">
+                <h5 class="text-center mt-3">Advanced Date Filtering</h5>
+                <p class="text-center">Incorporated a powerful date filtering tool, enabling users to view updates within specific time frames. This feature is essential for professionals needing timely, relevant data.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Prototyping & Testing -->
+    <!-- <section class="container mb-5">
+        <h2>Prototyping & Feedback</h2>
+        <p>Developed high-fidelity prototypes to demonstrate app functionality and flow. Feedback was collected from potential users, leading to refinements in navigation, search functionalities, and notification settings.</p>
+    </section> -->
+
+    <!-- Final Screens Carousel -->
+    <!-- <section class="container mb-5">
+        <h2>Final Screens</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/mobile_screen1.png" class="d-block w-100" alt="Discover Screen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Discover Screen</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/mobile_screen2.png" class="d-block w-100" alt="Search Results">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Search Results with Filtering</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/mobile_screen3.png" class="d-block w-100" alt="My Stream">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Personalized Stream</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/mobile_screen4.png" class="d-block w-100" alt="Notification Settings">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Notification Settings</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section> -->
+
+    <footer class="py-3 my-4 text-center">
+        <p>&copy; 2024 Teena Monaco. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
